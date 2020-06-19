@@ -29,3 +29,10 @@ $(window).on("load", function() {
       $('.loader').fadeOut();
   },600)
 });
+$(window).on('scroll', function() {
+  $('[data-fadeIn]').each(function(index, el) {
+    if($(window).scrollTop() > ($(el).offset().top - $(window).height() / 2 - 300) ){
+      $(el).addClass('is-over');
+    }
+  })
+});
