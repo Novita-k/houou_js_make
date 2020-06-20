@@ -377,7 +377,7 @@ a img:hover{
     margin: 0;
   }
 
-  /*ヘッダーここから*/
+  /*スマホヘッダーここから*/
   .header{
     height: 45px;
   }
@@ -442,7 +442,7 @@ a img:hover{
     bottom: 0;
   }
 
-  /*jsで変更される箇所*/
+  /*スマホハンバーガーメニュー。jsで変更される箇所*/
   .header-links.is-active{
     left: 0;
   }

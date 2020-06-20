@@ -21,6 +21,11 @@ $(function(){
       }
     ]
   });
+  // ハンバーガーメニュー
+  $('.menu-trigger').on('click',function() {
+    $('.header-links').toggleClass('is-active');
+    $(this).toggleClass('is-active');
+  });
 });
 
 $(window).on("load", function() {
@@ -29,6 +34,8 @@ $(window).on("load", function() {
       $('.loader').fadeOut();
   },600)
 });
+
+// フェードイン
 $(window).on('scroll', function() {
   $('[data-fadeIn]').each(function(index, el) {
     if($(window).scrollTop() > ($(el).offset().top - $(window).height() / 2 - 300) ){
